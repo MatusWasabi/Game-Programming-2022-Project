@@ -7,8 +7,9 @@ using UnityEngine.Events;
 public class HPSystem : MonoBehaviour
 {
     [SerializeField] private int _maxHp = 100;
-   
-    
+
+
+
     private int _hp;
 
     public int MaxHp => _maxHp;
