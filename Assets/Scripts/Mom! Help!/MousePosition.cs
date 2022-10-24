@@ -17,5 +17,12 @@ public class MousePosition : MonoBehaviour
 
     private void HandleMovement()
     {
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector3.zero);
+
+        if (hit)
+        {
+            
+        }
     }
 }
