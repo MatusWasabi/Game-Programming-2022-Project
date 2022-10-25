@@ -22,6 +22,7 @@ public class LevelManager : MonoBehaviour
 
     private void CheckEqual()
     {
+
         for (int i = 0; i < checkList.Count; i++)
         {
             if (checkList[i] == inventoryList[i])
