@@ -6,7 +6,6 @@ using UnityEngine.InputSystem;
 public class MousePosition : MonoBehaviour
 {
 
-
     private void OnClick(InputValue value)
     {
         if (value.isPressed)
@@ -22,7 +21,11 @@ public class MousePosition : MonoBehaviour
 
         if (hit)
         {
-            
+            if (hit.transform.gameObject.TryGetComponent(out HiddenObject hiddenObject))
+            {
+                SoObjectData foundItem = hiddenObject.GetItemData();
+                LevelManager.instance.AddToInventory(foundItem);
+            }
         }
     }
 }

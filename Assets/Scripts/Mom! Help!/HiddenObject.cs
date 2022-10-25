@@ -5,7 +5,6 @@ using UnityEngine;
 public class HiddenObject : MonoBehaviour
 {
     [SerializeField] private SoObjectData itemData;
-
     [SerializeField] private SpriteRenderer spriteRenderer;
     
     private string itemName;
@@ -13,13 +12,16 @@ public class HiddenObject : MonoBehaviour
 
     private void Awake()
     {
-        itemName = itemData.hiddenName;
-        spriteRenderer.sprite = itemData.itemSprite;
+        itemName = itemData.GetName();
+        spriteRenderer.sprite = itemData.GetSprite();
     }
 
     private void OnMouseDown()
     {
-        Debug.Log("Found");
+
     }
+
+    public SoObjectData GetItemData() => itemData;
+   
 
 }
