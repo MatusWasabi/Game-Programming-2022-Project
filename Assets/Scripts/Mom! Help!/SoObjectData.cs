@@ -5,7 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Hidden Object", menuName = "Scriptable Object/Hidden Object Data")]
 public class SoObjectData : ScriptableObject
 {
-    public string hiddenName;
-    public Sprite itemSprite;
+    [SerializeField] private string hiddenName;
+    [SerializeField] private Sprite itemSprite;
 
+    public string GetName() => hiddenName;
+    public Sprite GetSprite() => itemSprite;
 }

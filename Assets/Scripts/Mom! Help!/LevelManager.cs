@@ -5,8 +5,8 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
-    [SerializeField] private List<HiddenObjectsData> hiddenObjectsList;
-    [SerializeField] private List<HiddenObjectsData> activeHiddenObjectList;
+    [SerializeField] private List<SoObjectData> checkList;
+    [SerializeField] private List<SoObjectData> inventoryList;
 
     private void Awake()
     {
@@ -14,20 +14,25 @@ public class LevelManager : MonoBehaviour
         else if (instance != null) Destroy(gameObject);
     }
 
-    private void AssignHiddenObjects()
+    public void AddToInventory(SoObjectData addedItem)
     {
-        for (int i = 0; i < hiddenObjectsList.Count; i++)
+        inventoryList.Add(addedItem);
+        CheckEqual();
+    }
+
+    private void CheckEqual()
+    {
+        for (int i = 0; i < checkList.Count; i++)
         {
-            hiddenObjectsList[i].hiddenObject.GetComponent<Collider2D>().enabled = false;
+            if (checkList[i] == inventoryList[i])
+            {
+                Debug.Log("Match " + i);
+            }
         }
     }
 
-}
+    private void AddToUi(SoObjectData soObjectData)
+    {
 
-[System.Serializable]
-public class HiddenObjectsData
-{
-    public string name;
-    public GameObject hiddenObject;
-    public bool makeHidden = false;
+    }
 }
