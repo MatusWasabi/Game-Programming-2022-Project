@@ -5,8 +5,8 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
-    [SerializeField] private List<SoObjectData> checkList;
-    [SerializeField] private List<SoObjectData> inventoryList;
+    [SerializeField] private List<SoObjectData> checkList = new List<SoObjectData>();
+    [SerializeField] private List<SoObjectData> inventoryList = new List<SoObjectData>();
 
     private void Awake()
     {
@@ -22,17 +22,23 @@ public class LevelManager : MonoBehaviour
 
     private void CheckEqual()
     {
+        if (checkList.Count != inventoryList.Count) { return; }
 
+
+        // Check if the inventory contains all of the checklist
+        //if not, this function end. If yes, this lines below loop is called.
         for (int i = 0; i < checkList.Count; i++)
         {
-            if (checkList[i] == inventoryList[i])
-            {
-                Debug.Log("Match " + i);
-            }
+            bool haveAll = inventoryList.Contains(checkList[i]);
+            if (!haveAll) { return; }
         }
+
+        Debug.Log("Called Check");
     }
 
-    private void AddToUi(SoObjectData soObjectData)
+
+
+    private void AddToUI(SoObjectData soObjectData)
     {
 
     }

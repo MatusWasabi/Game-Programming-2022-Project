@@ -18,7 +18,7 @@ public class HiddenObject : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Found");
+
     }
 
     public SoObjectData GetItemData() => itemData;
