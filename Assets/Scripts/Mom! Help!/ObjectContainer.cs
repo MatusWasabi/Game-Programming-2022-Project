@@ -19,7 +19,6 @@ public class ObjectContainer : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Clicked!");
         if(isOpened) { CloseContainer(); }
         else { OpenContainer(); }
         isOpened = !isOpened;
