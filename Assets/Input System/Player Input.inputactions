@@ -791,6 +791,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Mouse",
+            "id": "2bafb79a-ddd2-4b63-a337-b1896600ced4",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "5cfd6257-d8fe-4013-813d-d399c743810d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "298c68c3-ffc0-401c-acbc-5bcd08be3944",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
