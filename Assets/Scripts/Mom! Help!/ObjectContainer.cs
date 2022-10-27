@@ -6,6 +6,7 @@ public class ObjectContainer : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer containSpriteRenderer;
     [SerializeField] private Sprite openedSprite;
+    [SerializeField] private Sprite closedSprite;
     [SerializeField] private GameObject insideObject;
     [SerializeField] private bool isOpened;
 
@@ -27,10 +28,12 @@ public class ObjectContainer : MonoBehaviour
     private void OpenContainer()
     {
         insideObject.SetActive(true);
+        containSpriteRenderer.sprite = openedSprite;
     }
 
     private void CloseContainer()
     {
         insideObject.SetActive(false);
+        containSpriteRenderer.sprite = closedSprite;
     }
 }
