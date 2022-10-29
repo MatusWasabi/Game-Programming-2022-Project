@@ -30,6 +30,7 @@ public class CursorControl : MonoBehaviour
         // controls.Mouse.Click.started += _ => StartedClick();
         //controls.Mouse.Click.performed += _ => EndedClick();
         Cursor.SetCursor(cursor, Vector2.zero, CursorMode.Auto);
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     private void Update()
