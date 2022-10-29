@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu Leaf Hat Cat.unity
+    path: Assets/Scenes/Hatcat/MainMenu Leaf Hat Cat.unity
     guid: 9b07b8f31b66023459276344caf96f48
   - enabled: 1
-    path: Assets/Scenes/Demo Level Leaf Hat Cat.unity
+    path: Assets/Scenes/Hatcat/Demo Level Leaf Hat Cat.unity
     guid: f31ec42cecf254ab394d4186719f6142
   m_configObjects: {}
