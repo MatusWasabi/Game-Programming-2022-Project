@@ -19,7 +19,8 @@ public class HiddenObject : MonoBehaviour
 
     private void OnMouseDown()
     {
-
+        Debug.Log("Clicked");
+        Destroy(gameObject);
     }
 
     public SoObjectData GetItemData() => itemData;

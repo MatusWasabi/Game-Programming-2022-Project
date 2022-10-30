@@ -16,4 +16,7 @@ public class ItemIcon : MonoBehaviour
         image.sprite = itemData.GetSprite();
     }
 
+    
+
+
 }

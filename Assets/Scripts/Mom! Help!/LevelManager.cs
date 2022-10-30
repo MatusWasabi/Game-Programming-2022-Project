@@ -10,9 +10,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private List<SoObjectData> inventoryList = new List<SoObjectData>();
 
     private void Awake()
-    {
-        
-
+    {   
         if (instance == null) instance = this;
         else if (instance != null) Destroy(gameObject);
         
@@ -48,7 +46,7 @@ public class LevelManager : MonoBehaviour
 
         int nextLevelBuildIndex = SceneManager.GetActiveScene().buildIndex + 1;
 
-        if (SceneManager.GetActiveScene().buildIndex == 7) /* < Change this int value to whatever your
+        if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCount) /* < Change this int value to whatever your
                                                                    last level build index is on your
                                                                    build settings */
         {
@@ -59,13 +57,20 @@ public class LevelManager : MonoBehaviour
         else
         {
             //Move to next level
-            SceneManager.LoadScene(nextLevelBuildIndex);
+            int levelSelectionIndex = 1;
 
             //Setting Int for Index
             if (nextLevelBuildIndex > PlayerPrefs.GetInt("levelAt"))
             {
                 PlayerPrefs.SetInt("levelAt", nextLevelBuildIndex);
             }
+
+            SceneManager.LoadScene(levelSelectionIndex);
         }
+    }
+
+    public void ToMainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
