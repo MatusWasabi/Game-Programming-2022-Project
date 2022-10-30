@@ -15,7 +15,8 @@ public class ObjectContainer : MonoBehaviour
         containSpriteRenderer = GetComponent<SpriteRenderer>();
         Sprite closedSprite = containSpriteRenderer.sprite;
         isOpened = false;
-        insideObject.SetActive(false);
+        if(insideObject != null) { insideObject.SetActive(false); }
+        
     }
 
     private void OnMouseDown()
@@ -27,13 +28,13 @@ public class ObjectContainer : MonoBehaviour
 
     private void OpenContainer()
     {
-        insideObject.SetActive(true);
+        if (insideObject != null) { insideObject.SetActive(true); }
         containSpriteRenderer.sprite = openedSprite;
     }
 
     private void CloseContainer()
     {
-        insideObject.SetActive(false);
+        if (insideObject != null) { insideObject.SetActive(false); }
         containSpriteRenderer.sprite = closedSprite;
     }
 }

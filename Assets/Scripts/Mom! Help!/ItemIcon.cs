@@ -12,6 +12,7 @@ public class ItemIcon : MonoBehaviour
 
     private void Awake()
     {
+        image = gameObject.GetComponent<Image>();
         image.sprite = itemData.GetSprite();
     }
 

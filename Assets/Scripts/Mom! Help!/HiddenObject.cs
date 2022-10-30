@@ -12,6 +12,7 @@ public class HiddenObject : MonoBehaviour
 
     private void Awake()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         itemName = itemData.GetName();
         spriteRenderer.sprite = itemData.GetSprite();
     }
