@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class LoadLevelButton : MonoBehaviour
 {
-
     public void LoadLevel(int LevelIndex)
     {
         SceneManager.LoadScene(LevelIndex);

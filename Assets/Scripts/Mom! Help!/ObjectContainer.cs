@@ -12,7 +12,7 @@ public class ObjectContainer : MonoBehaviour
 
     private void Awake()
     {
-        containSpriteRenderer = GetComponent<SpriteRenderer>();
+        if(containSpriteRenderer == null) { containSpriteRenderer = GetComponent<SpriteRenderer>(); }
         Sprite closedSprite = containSpriteRenderer.sprite;
         isOpened = false;
         if(insideObject != null) { insideObject.SetActive(false); }
