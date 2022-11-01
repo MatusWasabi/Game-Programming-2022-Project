@@ -185,8 +185,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 95a5a9b06a5f54ee78f8b3257f333957, type: 2}
+  m_sharedMaterial: {fileID: -2341655660768309071, guid: 95a5a9b06a5f54ee78f8b3257f333957, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -322,8 +322,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 95a5a9b06a5f54ee78f8b3257f333957, type: 2}
+  m_sharedMaterial: {fileID: -2341655660768309071, guid: 95a5a9b06a5f54ee78f8b3257f333957, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -397,6 +397,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115792466}
   m_CullTransparentMesh: 1
+--- !u!1001 &125196601
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 97955676331569169, guid: d28913c251a4043ec9c087a762977843, type: 3}
+      propertyPath: m_Name
+      value: Cursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 97955676331569171, guid: d28913c251a4043ec9c087a762977843, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 97955676331569171, guid: d28913c251a4043ec9c087a762977843, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.9034406
+      objectReference: {fileID: 0}
+    - target: {fileID: 97955676331569171, guid: d28913c251a4043ec9c087a762977843, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.79537475
+      objectReference: {fileID: 0}
+    - target: {fileID: 97955676331569171, guid: d28913c251a4043ec9c087a762977843, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2877872
+      objectReference: {fileID: 0}
+    - target: {fileID: 97955676331569171, guid: d28913c251a4043ec9c087a762977843, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 97955676331569171, guid: d28913c251a4043ec9c087a762977843, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 97955676331569171, guid: d28913c251a4043ec9c087a762977843, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 97955676331569171, guid: d28913c251a4043ec9c087a762977843, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 97955676331569171, guid: d28913c251a4043ec9c087a762977843, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 97955676331569171, guid: d28913c251a4043ec9c087a762977843, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 97955676331569171, guid: d28913c251a4043ec9c087a762977843, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d28913c251a4043ec9c087a762977843, type: 3}
 --- !u!1 &208591916
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,8 +570,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 98712a99221a15b419bec2a6599c2e12, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1146,8 +1203,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c90dbee41d3f83d468191b32a23f1762, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
