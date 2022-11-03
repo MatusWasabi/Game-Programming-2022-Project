@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mom Help Level/Level 1 Kitchen.unity
     guid: 48aff530ce63e42d48429c754a96d7cf
+  - enabled: 1
+    path: Assets/Scenes/Mom Help Level/Level 2 Living Room.unity
+    guid: e6c2da282b7aa4eb5a115cc9528e170c
   m_configObjects: {}
