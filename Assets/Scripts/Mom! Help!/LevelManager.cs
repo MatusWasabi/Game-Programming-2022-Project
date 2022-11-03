@@ -25,10 +25,9 @@ public class LevelManager : MonoBehaviour
     private void CheckEqual()
     {
         if (checkList.Count != inventoryList.Count) { return; }
+        else if (inventoryList.Count > checkList.Count) { Debug.Log("Bug"); }
 
 
-        // Check if the inventory contains all of the checklist
-        //if not, this function end. If yes, this lines below loop is called.
         for (int i = 0; i < checkList.Count; i++)
         {
             bool haveAll = inventoryList.Contains(checkList[i]);
@@ -46,13 +45,8 @@ public class LevelManager : MonoBehaviour
 
         int nextLevelBuildIndex = SceneManager.GetActiveScene().buildIndex + 1;
 
-        if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCount) /* < Change this int value to whatever your
-                                                                   last level build index is on your
-                                                                   build settings */
+        if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCount) 
         {
-            Debug.Log("You Completed ALL Levels");
-
-            //Show Win Screen or Somethin.
         }
         else
         {
@@ -69,8 +63,8 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void ToMainMenu()
+    public void ToSelection()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

@@ -6,6 +6,8 @@ public class CursorControl : MonoBehaviour
 {
     [SerializeField] private Texture2D cursor;
     [SerializeField] private Texture2D cursorClicked;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip clip;
     private PlayerInput controls;
 
    /* private void Awake()
@@ -37,7 +39,8 @@ public class CursorControl : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Cursor.SetCursor(cursorClicked, Vector2.zero, CursorMode.Auto); 
+            Cursor.SetCursor(cursorClicked, Vector2.zero, CursorMode.Auto);
+            audioSource.PlayOneShot(clip);
         }
         if (Input.GetMouseButtonUp(0))
         {
